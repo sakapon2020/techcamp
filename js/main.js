@@ -56,13 +56,19 @@
     tbody.appendChild(row);
   }
 
-  // 先頭のセルに曜日の表記を設定
+  // 当日の日付を取得
+  const currentDate = new Date();
+  const currentDay = currentDate.getDate()+10; // 1:1日, 2:2日, ..., 31:31日
+
+  // 先頭のセルに曜日と日付の表記を設定
   const thCells = document.querySelectorAll('#scheduleTable th');
   for (let i = 0; i < 7; i++) {
     const th = thCells[i + 1]; // 0番目は時間列なのでスキップ
     const dayIndex = (today + i) % 7;
-    th.textContent = `${(dayIndex + 1) + 12}(${weekdays[dayIndex]})`;
+    const dayNumber = currentDay + i > 31 ? currentDay + i - 31 : currentDay + i;
+    th.textContent = `${dayNumber}(${weekdays[dayIndex]})`;
   }
+
 }
 
 
