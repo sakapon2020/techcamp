@@ -1,0 +1,144 @@
+.show-md {
+    display: none !important;
+}
+
+#reason {
+    #reason6 {
+        & .graph-img {
+            width: 680px;
+            margin: 0 auto;
+            justify-content: space-between;
+            & .annotation {
+            margin-top: 8px;
+            text-align: center;
+            }
+            & .chart__wrapper {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                width: 320px;
+                justify-content: center;
+                margin: 0 auto;
+                gap: 0 8px;
+            }
+            & .annotation {
+                max-width: 900px;
+                margin: 0 0 16px auto;
+                text-align: center;
+            }
+        }
+        & .annotation {
+            font-size: 12px;
+            max-width: 900px;
+            margin: 0 0 16px auto;
+            &.text-right {
+                text-align: right;
+            }
+        }
+    }
+    & .section-inner-reason {
+        padding: 24px 16px;
+    }
+}
+#chooseplan {
+    & .section-inner {
+        padding: 64px 0;
+        display: block;
+    }
+}
+#RegularEmployees {
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+}
+#BusinessWorld {
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+}
+#Newjob {
+    & h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+}
+.training-benefits-section {
+    padding: 60px 32px;
+    & .section-inner {
+        background-position: center right;
+        background-size: contain;
+        padding: 24px 80px;
+        & h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            & .h2_underline {
+                background: linear-gradient(transparent 70%, $cGrey 45%);
+            }
+        }
+    }
+    & .show-sp {
+        display: none !important;
+    }
+    & .benefits_explanation {
+        margin-bottom: 24px;
+        & .benefits_logo {
+            max-width: 280px;
+            margin-bottom: 16px;
+        }
+        & p {
+            margin-left: 32px;
+            font-size: 32px;
+        }
+    }
+    & .benefits_annotation {
+        line-height: 1.4;
+        & small {
+            font-size: 14px;
+        }
+    }
+    & .benefits_description_btn {
+        font-size: 24px;
+        width: min(50%, 360px);
+        &::after {
+            line-height: 36px;
+            color: $cWhite;
+            width: 14px;
+            height: 14px;
+            right: 12%;
+            bottom: 0;
+        }
+
+    }
+}
+.bg-color-white.border-top.conseling-entry-v2 {
+    & p.text-center {
+        color: #666;
+    }
+    &.section-inner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    & .container {
+        width: 970px;
+        & .margin-bottom-0 {
+            margin-bottom: 0 !important;
+        } 
+        & #bnr_2212 {
+            text-align: center;;
+            & img {
+                padding: 40px 3% 16px;
+                width: 800px;
+                background-size: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.section-inner {
+    padding: 64px 0;
+    display: block;
+    width: ming(100%, 1000px);
+    margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*--------------------------------------------------------------
+   RESET
+--------------------------------------------------------------*/
+@import 'base';
+@import 'mobile';
+
+@media (min-width: 576px) {
+    @import '576up';
+}
+@media (min-width: 768px) {
+    @import '768up';
+}
+@media (min-width: 991px) {
+    @import '991up';
+}
+@media (min-width: 1200px) {
+    @import '1200up';
+}
