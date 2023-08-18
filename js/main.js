@@ -58,7 +58,7 @@
 
   // 当日の日付を取得
   const currentDate = new Date();
-  const currentDay = currentDate.getDate()+10; // 1:1日, 2:2日, ..., 31:31日
+  const currentDay = currentDate.getDate(); // 1:1日, 2:2日, ..., 31:31日
 
   // 先頭のセルに曜日と日付の表記を設定
   const thCells = document.querySelectorAll('#scheduleTable th');
